@@ -3,7 +3,7 @@ import os
 import sys
 import hashlib
 
-addr = '10.211.55.5'
+addr = '34.64.105.127'
 port = 8000
 
 try:

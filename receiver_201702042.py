@@ -10,7 +10,7 @@ def check_md5_hash(path):
     return md5_hash
 
 
-host = "192.168.219.111"
+host = ""
 port = 8000
 
 if __name__=='__main__':
