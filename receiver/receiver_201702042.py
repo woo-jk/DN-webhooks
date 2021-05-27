@@ -3,6 +3,7 @@ import os
 import sys
 import hashlib
 
+
 host = "10.211.55.5"
 port = 8000
 
@@ -35,10 +36,10 @@ if __name__=='__main__':
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         s.setblocking(0)
         s.settimeout(15)
-        print("receiver created")
+        print("receiver created!!")
    
     except socket.error:
-        print("1failed to create socket")
+        print("failed to create socket!!")
         sys.exit()
     
     while True:
@@ -76,7 +77,7 @@ if __name__=='__main__':
 
                 if receive_checksum != send_checksum:
                     socket.close()
-                    print('checksum is not equal')
+                    print('checksum is not equal!!')
                     sys.exit()
 
                 write_file.write(chunk_file[40:])
@@ -86,7 +87,7 @@ if __name__=='__main__':
     
             write_file.close()
         else:
-            print("Command is wrong")
+            print("Command is wrong!!")
             socket.close()
             sys.exit()
 
